@@ -150,14 +150,32 @@ Our research expands through several peripheral and inter-connected scientific o
                 <div class="softwares-section">
                     <div class="section-header">
                         <h2>Software & Tools</h2>
-                        <a href="software.html" class="see-all-btn">
+                            <a href="software.html" class="see-all-btn">
                             <span class="btn-text">See all software</span>
                             <span class="btn-arrow">→</span>
-                        </a>
+                            </a>
                     </div>
+
+                    <ul id="portfolio-filters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-div">Diversity</li>
+                        <li data-filter=".filter-int">Interactions</li>
+                        <li data-filter=".filter-mut">Mutations</li>
+                        <li data-filter=".filter-dyn">Motions</li>
+                    </ul>
                     <p>Computational tools and software packages developed by our lab for protein analysis and prediction.</p>
                     <div class="softwares-grid" id="software-grid">
-                        <div class="software-box">
+                        <div class="software-box filter-dyn" >
+                            <div class="software-image">
+                                <img src="images/softwares/petimot.png" alt="PETIMOT interface">
+                            </div>
+                            <div class="software-content">
+                                <h3><a href="https://github.com/PhyloSofS-Team/PETIMOT" target="_blank">PETIMOT</a></h3>
+                                <p class="software-description">Need to explore protein conformational diversity without running costly simulations?</p>
+                            </div>
+                        </div>
+
+                        <div class="software-box filter-dyn" >
                             <div class="software-image">
                                 <img src="images/softwares/seamoon.png" alt="SeaMoon interface">
                             </div>
@@ -167,7 +185,7 @@ Our research expands through several peripheral and inter-connected scientific o
                             </div>
                         </div>
 
-                        <div class="software-box">
+                        <div class="software-box filter-mut">
                             <div class="software-image">
                                 <img src="images/softwares/proteocast.png" alt="ProteoCast interface">
                             </div>
@@ -177,7 +195,7 @@ Our research expands through several peripheral and inter-connected scientific o
                             </div>
                         </div>
 
-                        <div class="software-box">
+                        <div class="software-box filter-div">
                             <div class="software-image">
                                 <img src="images/softwares/ases.png" alt="ASES interface">
                             </div>
@@ -187,7 +205,7 @@ Our research expands through several peripheral and inter-connected scientific o
                             </div>
                         </div>
 
-                        <div class="software-box">
+                        <div class="software-box filter-int">
                             <div class="software-image">
                                 <img src="images/softwares/levelnet.png" alt="LEVELNET interface">
                             </div>
@@ -197,7 +215,7 @@ Our research expands through several peripheral and inter-connected scientific o
                             </div>
                         </div>
 
-                        <div class="software-box">
+                        <div class="software-box filter-int">
                             <div class="software-image">
                                 <img src="images/softwares/jet2dna.png" alt="JET2DNA interface">
                             </div>

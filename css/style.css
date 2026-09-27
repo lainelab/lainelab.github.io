@@ -23,6 +23,34 @@ body {
     padding: 0 3rem;
 }
 
+#portfolio-filters {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 20px 0 40px;
+}
+#portfolio-filters li {
+  cursor: pointer;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  background: #f0f0f0;
+  color: #444;
+  transition: all 0.3s ease;
+}
+#portfolio-filters li:hover,
+#portfolio-filters li.filter-active {
+  background: #be4019;
+  color: #fff;
+}
+.software-box.hidden {
+  display: none;
+}
+
 /* Navigation */
 .navbar {
     background-color: #fff;

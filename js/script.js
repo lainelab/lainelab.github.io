@@ -62,3 +62,25 @@ window.addEventListener('scroll', function() {
     });
 
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const filters = document.querySelectorAll('#portfolio-filters li');
+  const items = document.querySelectorAll('#software-grid .software-box');
+
+  filters.forEach(function (filter) {
+    filter.addEventListener('click', function () {
+      filters.forEach(f => f.classList.remove('filter-active'));
+      this.classList.add('filter-active');
+
+      const value = this.getAttribute('data-filter'); // ex: ".filter-div"
+
+      items.forEach(function (item) {
+        if (value === '*' || item.classList.contains(value.slice(1))) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    });
+  });
+});
